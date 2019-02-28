@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      一块钱
+      给Hexo加上Live2D看板喵 | 一块钱
     
   </title>
   <meta name="author" content="xxeNt(咄爸)">
@@ -114,7 +114,7 @@
 				<!-- Page title -->
 				<p>
 					
-						主页
+						当前文章&nbsp;:&nbsp;《给Hexo加上Live2D看板喵》
 					
 				</p>
 				<!-- Progress bar -->
@@ -260,43 +260,53 @@
 		
 		<!--main-->
 		<main>
-			
-
-
-
-	<!--cart style-->
-	<div class="layout-cart">
-	<div id="layout-cart">
+			<div class="layout-post">
+	
+	
+	<div class="article-title">
 		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/02/28/add-live2d-to-hexo.html" title=" 给Hexo加上Live2D看板喵 ">
-				<img src="https://raw.githubusercontent.com/xxx794665/blog/master/images/hijiki.png">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					二月 28日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/02/28/add-live2d-to-hexo.html" title="给Hexo加上Live2D看板喵">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
 	<a href="/2019/02/28/add-live2d-to-hexo.html" itemprop="url">
 		给Hexo加上Live2D看板喵
 	</a>
 
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						
-hexo-helper-live2d 的 Github 链接：https://github.com/EYHN/hexo-helper-live2d
+	</div>
 
-分...
-					
-				</p>
-				<p class="post-meta">
-					
+	<div class="article-meta">
+		<span>
+			
+	发布于
+	<a href="/2019/02/28/add-live2d-to-hexo.html" itemprop="url">
+		<time datetime="2019-02-28T13:24:00.000Z" itemprop="datePublished">
+	  		2019-02-28
+	  </time>
+	</a> 
+
+	/
+	更新于
+	<a href="/2019/02/28/add-live2d-to-hexo.html" itemprop="url">
+		<time datetime="2019-02-28T13:24:00.000Z" itemprop="dateUpdated">
+	  		2019-02-28
+	  </time>
+	</a> 	
+
+		</span>
+		/
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/tags/Hexo/" class=" ">
+			Hexo
+		</a>
+	
+		<a href="/tags/Live2d/" class=" ">
+			Live2d
+		</a>
+	
+		
+		</span>
+		/
+		
 
     <span class="leancloud_visitors" id="/2019/02/28/add-live2d-to-hexo.html_visitors" data-url="/2019/02/28/add-live2d-to-hexo.html" data-title="给Hexo加上Live2D看板喵">
         热度
@@ -313,170 +323,225 @@ hexo-helper-live2d 的 Github 链接：https://github.com/EYHN/hexo-helper-live2
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
     </span>
 
-					
+	</div>
 
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
+	<div class="article-content" id="article-content">
+		<blockquote>
+<p>hexo-helper-live2d 的 Github 链接：<a href="https://github.com/EYHN/hexo-helper-live2d" target="_blank" rel="noopener">https://github.com/EYHN/hexo-helper-live2d</a></p>
+</blockquote>
+<p>分享一个有趣的Hexo插件<code>Hexo-helper-live2d</code> ヽ(^ω^)ﾉ</p>
+<ul>
+<li><p>安装Hexo-helper-live2d</p>
+<p>在Hexo根目录下运行</p>
+<pre><code class="bash">$ npm install hexo-helper-live2d --save
+</code></pre>
+<p>即可安装依赖应用，</p>
+<pre><code>hexo-site@0.0.0 /root/blog
+└┬ hexo-helper-live2d@3.1.0 
+  ├── colors@1.3.3 
+  ├── live2d-widget@3.0.5 
+  └── path@0.12.7 
 
+</code></pre><p>  看到以上输出代表已经安装成功~</p>
+</li>
+<li><p>配置Hexo-helper-live2d</p>
+<p>  在开始配置之前，需要先下载Live2d资源，你可以从<strong><a href="https://huaji8.top/post/live2d-plugin-2.0/" title="hexo live2d插件 2.0 !" target="_blank" rel="noopener">插件作者的博客</a></strong>处挑选，<del>也可以自行Google更涩情的小姐姐</del></p>
+<ul>
+<li><p>安装你的Live2d资源</p>
+<p> 若使用上面页面中的Live2d资源，可以直接通过<code>live2d-widget-model-你选中的萌物名字</code>，即可获取对应的Live2d资源，<br>示例：</p>
+<pre><code class="bash">$ npm install live2d-widget-model-hijiki --save
+</code></pre>
+</li>
+<li><p>配置你的Live2d资源</p>
+<p>  在<strong><a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md" title="Hexo-helper-live2d中文文档" target="_blank" rel="noopener">官方文档</a></strong>中可以很容易获取配置文件的样例，<br>  并编辑blog根目录/主题根目录下的<code>_config.yml</code>即可。示例：</p>
+<pre><code class="bash"># Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+enable: true
+# enable: false
+scriptFrom: local # 默认
+pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+# scriptFrom: jsdelivr # jsdelivr CDN
+# scriptFrom: unpkg # unpkg CDN
+# scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+debug: false # 调试, 是否在控制台输出日志
+model:
+use: live2d-widget-model-wanko # npm-module package name
+# use: wanko # 博客根目录/live2d_models/ 下的目录名
+# use: ./wives/wanko # 相对于博客根目录的路径
+# use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+</code></pre>
+<p>  然后执行<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code>，即可看到效果~<br>Enjoy it！ </p>
+</li>
+</ul>
+</li>
+</ul>
+	
+	</div>
+	
+	<div id="current-post-cover" data-scr="https://raw.githubusercontent.com/xxx794665/blog/master/images/hijiki.png"></div>
 
-
-	<script>
-		var appid = '6m8c0QEFurLvqKxgAYdM3xRF-gzGzoHsz',
-            appkey = 'zFYYfvJ72DAXVPdvkDMfbHdl';	  
-        AnnieLeancloud(appid, appkey);         
-	</script>
-    
-
-
- 
-				</p>
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">相关文章</div>
+				<div>评论</div>
 			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
+		
+		
+			<a href="/2019/02/28/Teamviewer-not-ready.html" title="Teamviewer连接未就绪(Linux Manjaro)" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+      		
+			</div>	
 		</div>
 		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/02/28/Teamviewer-not-ready.html" title=" Teamviewer连接未就绪(Linux Manjaro) ">
-				<img src="https://raw.githubusercontent.com/xxx794665/blog/master/images/teamviewer-not-ready.png">
-			</a>
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
 
-			<div class="post-text">
-				<p class="post-time">
-					二月 28日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/02/28/Teamviewer-not-ready.html" title="Teamviewer连接未就绪(Linux Manjaro)">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/02/28/Teamviewer-not-ready.html" itemprop="url">
-		Teamviewer连接未就绪(Linux Manjaro)
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						
+<div class="relate-post">
+	<ul>
+		
+				<li>
+					<div>
+						<a href="/2019/02/28/Teamviewer-not-ready.html" title="Teamviewer连接未就绪(Linux Manjaro)">
+							Teamviewer连接未就绪(Linux Manjaro)
+						</a>
+						<p>
+							
 折腾Manjaro的过程中，客户需要远程支持，直接尝试Linux安装Teamviewer
 
 
 安装Teamviewer
-sudo pacman -S t...
-					
-				</p>
-				<p class="post-meta">
-					
+sudo pacman -S teamviewer
 
-    <span class="leancloud_visitors" id="/2019/02/28/Teamviewer-not-ready.html_visitors" data-url="/2019/02/28/Teamviewer-not-ready.html" data-title="Teamviewer连接未就绪(Linux Manjaro)">
-        热度
-        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
-    </span>
-    
-    /
+安装顺利完成后，直接运行teamviewer，却提示  未...
+						</p>
+					</div>
 
-
-
-    <span class="leancloud_likes" id="/2019/02/28/Teamviewer-not-ready.html_likes" data-url="/2019/02/28/Teamviewer-not-ready.html" data-title="Teamviewer连接未就绪(Linux Manjaro)" rel="unlike">
-        喜欢
-        <i class="fa fa-heart"></i>
-        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
-    </span>
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-
-	<script>
-		var appid = '6m8c0QEFurLvqKxgAYdM3xRF-gzGzoHsz',
-            appkey = 'zFYYfvJ72DAXVPdvkDMfbHdl';	  
-        AnnieLeancloud(appid, appkey);         
-	</script>
-    
-
-
- 
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/01/26/undefined.html" title=" Hello World ">
-				<img src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					一月 26日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/01/26/undefined.html" title="Hello World">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/01/26/undefined.html" itemprop="url">
-		Hello World
-	</a>
-
+					<a href="/2019/02/28/Teamviewer-not-ready.html" title="Teamviewer连接未就绪(Linux Manjaro)">				
+						<img src="https://raw.githubusercontent.com/xxx794665/blog/master/images/teamviewer-not-ready.png" class="relateImg" alt="Teamviewer连接未就绪(Linux Manjaro)">
 					</a>
-				</h3>
-				<p class="post-content">
-					
-						欢迎来到我的Blog，having fun！
+				</li>											
+		
+		
+				<li>
+					<div>
+						<a href="/2019/01/26/undefined.html" title="Hello World">
+							Hello World
+						</a>
+						<p>
+							欢迎来到我的Blog，having fun！
 Star my Github
 
-					
-				</p>
-				<p class="post-meta">
-					
+						</p>
+					</div>
 
-    <span class="leancloud_visitors" id="/2019/01/26/undefined.html_visitors" data-url="/2019/01/26/undefined.html" data-title="Hello World">
-        热度
-        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
-    </span>
-    
-    /
+					<a href="/2019/01/26/undefined.html" title="Hello World">				
+						<img src="/img/cart_cover.jpg" class="relateImg" alt="Hello World">
+					</a>
+				</li>											
+		
+		
+	</ul>
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+
+			<!-- comment gitalk -->
+			<!-- show gitalk comment -->
+<div id="gitalk-container"></div>
+
+<!-- gitalk`s css & js -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<link rel="stylesheet" href="/css/comment.css">
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+	//Thanks O-R
+	//https://github.com/gitalk/gitalk/issues/102#issuecomment-382970552
+	//去除尾部匹配正则数组的字符串  
+	//Remove redundant characters
+	String.prototype.trimEnd = function(regStr) {
+		var result = this;
+		if(regStr == undefined || regStr == null || regStr == "") {
+			return result;
+		}
+		var array = regStr.split(',');
+
+		if(array.length > 0) {
+
+			var c = array.shift();
+			var str = this;
+			var i = str.length;
+			var rg = new RegExp(c);
+			var matchArr = str.match(rg);
+
+			if(matchArr != undefined && matchArr != null && matchArr.length > 0) {
+				var matchStr = matchArr[0].replace(/\\/g, "\\\\").replace(/\*/g, "\\*")
+					.replace(/\+/g, "\\+").replace(/\|/g, "\\|")
+					.replace(/\{/g, "\\{").replace(/\}/g, "\\}")
+					.replace(/\(/g, "\\(").replace(/\)/g, "\\)")
+					.replace(/\^/g, "\\^").replace(/\$/g, "\\$")
+					.replace(/\[/g, "\\[").replace(/\]/g, "\\]")
+					.replace(/\?/g, "\\?").replace(/\,/g, "\\,")
+					.replace(/\./g, "\\.").replace(/\&/g, "\\&");
+				matchStr = matchStr + '$';
+				result = str.replace(new RegExp(matchStr), "");
+			}
+
+			if(array.length > 0) {
+				return result.trimEnd(array.join())
+			} else {
+				return result;
+			}
+		}
+	};
+
+	//Create gitalk
+	var gitalk = new Gitalk({
+		clientID: '60a517a33b7e35aa1459',
+		clientSecret: 'f8221481d15454e24d7044d8a2e2ac21833a8f13',
+		//id: window.location.pathname,
+		//id: decodeURI(window.location.pathname),
+		//id: (window.location.pathname).split("/").pop().substring(0, 49),
+		id: decodeURI( md5( location.href.trimEnd('#.*$,\\?.*$,index.html$') ) ),
+		repo: 'blog',
+		owner: 'xxx794665',
+		admin: 'xxx794665',
+		distractionFreeMode: 'true',
+	})
+	gitalk.render('gitalk-container');
+</script>
+
+		
+		
+	
+
+</div>
+			</div>
+		</div>	
+	</div>
+</div>
 
 
-
-    <span class="leancloud_likes" id="/2019/01/26/undefined.html_likes" data-url="/2019/01/26/undefined.html" data-title="Hello World" rel="unlike">
-        喜欢
-        <i class="fa fa-heart"></i>
-        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
-    </span>
-
-					
 
 	<!-- leancloud -->
 	<!--
@@ -508,20 +573,43 @@ Star my Github
 
 
  
-				</p>
-			</div>
-		</div>
-		
-	</div>
-	
-	
-	<div id="pagination">
-		
-	</div>
 
-</div>
-	
+<!-- show math formula -->
 
+
+
+
+<!-- TODO: There seems to be a bug when you close the post gallery! -->
+<link rel="stylesheet" href="/plugin/lightgallery/css/lightgallery.css">
+<script src="/plugin/lightgallery/js/jquery-1.11.0.min.js"></script>
+<script src="/plugin/lightgallery/js/lightgallery-all.min.js"></script>
+
+<script type="text/javascript">
+	var postTitle = $('.article-title a').text() ? $('.article-title a').text() : "No post title!";
+	$('.article-content img').each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		$(this).wrap('<div class="img-responsive" data-src="' + imgPath + '" data-responsive="' + imgPath + '" data-sub-html="<p>图片 ' + imgTitle + '</p><h4>文章' + postTitle + '</h4>"></div>');
+	});
+
+	$('.article-content').lightGallery({
+		mode: 'lg-slide',
+		selector: '.img-responsive',
+		share: false,
+		zoom: false,
+		download: false
+	});
+	//TODO：支持video
+</script>
+
+<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+	
 		</main>
 		
 		<!--footer-->
@@ -572,14 +660,10 @@ Star my Github
 	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 
-		<span id="busuanzi_container_site_pv">
-	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+		<span id="busuanzi_container_page_pv">
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
 		</span>
 
-		<span id="busuanzi_container_site_uv">
-	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
-		</span>
-		
 	
 
 
