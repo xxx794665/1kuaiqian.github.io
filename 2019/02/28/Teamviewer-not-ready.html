@@ -34,7 +34,8 @@
   <!-- leancloud -->
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script src="/js/leancloud.js"></script>
-</head>
+<link rel="stylesheet" href="/css/prism-atom-dark.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 	<body>
 		<!-- Preloader -->
 
@@ -331,8 +332,8 @@
 </blockquote>
 <ul>
 <li><p>安装Teamviewer</p>
-<pre><code class="bash">sudo pacman -S teamviewer
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> pacman -S teamviewer
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>安装顺利完成后，直接运行<code>teamviewer</code>，却提示 <strong> 未就绪。请检查您的连接</strong><br><img src="https://raw.githubusercontent.com/xxx794665/blog/master/images/teamviewer-not-ready.png" alt="未就绪。请检查您的连接" title="未就绪。请检查您的连接"></p>
 </li>
 <li><p>运行<code>teamviewer --daemon status</code>，查看teamviewer守护进程状态，发现并未启动</p>
@@ -340,8 +341,8 @@
 <li><p>运行<code>teamviewer --daemon start</code>，启动守护进程后，teamviewer即可正常工作<br><img src="https://raw.githubusercontent.com/xxx794665/blog/master/images/teamviewer-working.png" alt="连接准备已就绪（安全连接）" title="连接准备已就绪（安全连接）"></p>
 </li>
 <li><p>每次Manjaro重启后，teamviewer守护进程均会重置，需要自启</p>
-<pre><code class="bash">sudo teamviewer --daemon enable
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> teamviewer --daemon <span class="token function">enable</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>设置完成后，每次Manjaro重启均会自动启动teamviewer守护进程，直接运行teamviewer即可，问题解决。</p>
 </li>
 </ul>
